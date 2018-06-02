@@ -7,7 +7,7 @@ export class CitiboxService {
   constructor(private http:Http ) { }
 
   getAllData(){
-   return this.http.get('http://localhost:3000/api/datosAcceso').toPromise()
+   return this.http.get('http://0583c8db.ngrok.io/api/datosAcceso').toPromise()
   }
  
 

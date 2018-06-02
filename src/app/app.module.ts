@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CitiboxService } from './citibox.service';
 import { HttpModule } from '@angular/http';
 import { InicioComponent } from './inicio/inicio.component';
+import { appRoutes } from './app.routing'
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { InicioComponent } from './inicio/inicio.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule, HttpModule
+    RouterModule, HttpModule, RouterModule.forRoot(appRoutes)
   ],
   providers: [CitiboxService],
   bootstrap: [AppComponent]

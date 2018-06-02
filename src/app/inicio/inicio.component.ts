@@ -17,7 +17,7 @@ export class InicioComponent implements OnInit {
 
   ngOnInit() {
     this.citiboxService.getAllData().then((res)=>{
-      //this.persistenceService.set('listaDatos', res.json(), {type: StorageType.LOCAL})
+    //this.persistenceService.set('listaDatos', res.json(), {type: StorageType.LOCAL})
       console.log(this.persistenceService.get('listaDatos', StorageType.LOCAL ))
 
     })
