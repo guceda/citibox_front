@@ -1,20 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { PersistenceModule } from 'angular-persistence';
-
-
+import { Router, RouterModule } from '@angular/router'
 import { AppComponent } from './app.component';
+import { CitiboxService } from './citibox.service';
+import { HttpModule } from '@angular/http';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
-    PersistenceModule,
+    RouterModule, HttpModule
   ],
-  providers: [],
+  providers: [CitiboxService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
