@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row align-items-center">
+    <div class="logo col-12">
+      <img class="mx-auto d-block" src="../../assets/img/citibox-logo.png" alt="">
+    </div>
+    <div class="col-12 titulo">
+      <h1 class="text-center">Prueba de nuevo en el buzón {{data.numBuzon}}</h1>
+    </div>
+    <div class="spacing"></div>
+    <div class="col-12 subtitulo">
+      <p class="text-center codigo_sub">{{data.codigoAct}}</p>
+    </div>
+  </div>
+
+  <div class="spacingOne"></div>
+
+  <div class="row align-items-center">
+    <div class="col">
+      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'ten']">¡Pedido recogido!</a>
+    </div>
+    <div class="col">
+      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'thirteen']">No funciona</a>
+    </div>
+
+  </div>
+</div>

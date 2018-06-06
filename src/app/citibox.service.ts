@@ -6,10 +6,10 @@ export class CitiboxService {
 
   constructor(private http:Http ) { }
 
-  getAllData(){
-   return this.http.get('http://0583c8db.ngrok.io/api/datosAcceso').toPromise()
+  getAllData(pId){
+   return this.http.get(`https://escandallos.herokuapp.com/api/orden/${pId}`).toPromise()
   }
  
 
-
+  
 }
