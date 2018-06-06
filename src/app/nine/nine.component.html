@@ -12,14 +12,12 @@
       <div class="input">
         <form [formGroup]="form" (ngSubmit)="handleSubmit(form.value)">
           <input type="text" maxlength="1" style="text-transform:uppercase" formControlName="letra" class="letra" [ngClass]="{letraErr:error, parpadeo:parpadeo}">
-         
             <div class="col one">
               <input type="submit" class="btn d-block boton alto" value="OK" [disabled]="!form.valid">
             </div>
             <div class="col two">
               <a class="btn d-block boton alto" [routerLink]="['/orden', data.codigoTrans, 'two']" *ngIf="error === true">Ayuda</a>
             </div>
-         
         </form>
       </div>
     </div>

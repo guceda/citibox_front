@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contacto',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
+	id: any
+
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) { 
+	this.activatedRoute.params.subscribe((params) => {
+      this.id = params.id
+    })
+  }
 
   ngOnInit() {
+	  
   }
+
+	handleClick() {
+		this.router.navigate(['/orden', this.id, 'twob'])
+	}
 
 }

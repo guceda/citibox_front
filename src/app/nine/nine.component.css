@@ -136,7 +136,7 @@ input{
 }
 
 .letra {
-  border: 3px solid gray;
+  border: 6px solid gray;
 }
 
 .letraErr {
@@ -144,6 +144,6 @@ input{
 }
 
 .parpadeo {
-  border: 3px solid lightgrey !important;
+  border: 6px solid #7942ed !important;
 }
  

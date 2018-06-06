@@ -18,7 +18,7 @@ export class FourComponent implements OnInit {
   constructor(private citiboxService:CitiboxService, private persistenceService: PersistenceService, private activatedRoute: ActivatedRoute, private router: Router) { 
     this.activatedRoute.params.subscribe((params) => {
       this.id = params.id
-      console.log(params.id)
+      
     })
     this.data = this.persistenceService.get('listaDatos', StorageType.LOCAL)
   }
@@ -27,7 +27,7 @@ export class FourComponent implements OnInit {
     
     this.citiboxService.getAllData(this.id).then((res)=>{
       let dataRes = res.json()
-      console.log(dataRes)
+      
       this.persistenceService.set('listaDatos', dataRes, {type: StorageType.LOCAL})
 
       if(dataRes.error) {

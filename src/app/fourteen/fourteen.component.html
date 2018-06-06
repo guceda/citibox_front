@@ -4,22 +4,19 @@
       <img class="mx-auto d-block" src="../../assets/img/citibox-logo.png" alt="">
     </div>
     <div class="col-12 titulo">
-      <h1 class="text-center">Quieres volver a introducir el codigo?</h1>
+      <h1 class="text-center">Prueba de nuevo en el buzón {{data.numBuzon}}:</h1>
     </div>
     <div class="spacing"></div>
     <div class="col-12 subtitulo">
       <p class="text-center">{{data.codigoAnt}}</p>
     </div>
   </div>
-
-  <div class="spacingOne"></div>
-
   <div class="row align-items-center">
     <div class="col">
-      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'ten']">Ya tengo mi pedido</a>
+      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'ten']">¡Pedido recogido!</a>
     </div>
     <div class="col">
-      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'fifteen']">Necesito otro código</a>
+      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'fifteen']">No funciona</a>
     </div>
 
   </div>

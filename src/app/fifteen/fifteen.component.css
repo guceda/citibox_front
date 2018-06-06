@@ -1,106 +1,108 @@
 @font-face {
-   font-family: 'latolight';
-   src: url('../../assets/fonts/lato-light.woff2') format('woff2'),
-        url('../../assets/fonts/lato-light.woff') format('woff'),
-        url('../../assets/fonts/lato-light.ttf') format('ttf');
-   font-weight: normal;
-   font-style: normal;
-
-}
-
-@font-face {
-   font-family: 'latoregular';
-   src: url('../../assets/fonts/lato-regular.woff2') format('woff2'),
-        url('../../assets/fonts/lato-regular.woff') format('woff'),
-        url('../../assets/fonts/lato-regular.ttf') format('ttf');
-   font-weight: normal;
-   font-style: normal;
-
-}
-
-@font-face {
-   font-family: 'latosemibold';
-   src: url('../../assets/fonts/lato-semibold.woff2') format('woff2'),
-        url('../../assets/fonts/lato-semibold.woff') format('woff'),
-        url('../../assets/fonts/lato-semibold.ttf') format('ttf');
-   font-weight: normal;
-   font-style: normal;
-
-}
-
-
-@font-face {
-   font-family: 'quicksand_citiboxbold';
-   src: url('../../assets/fonts/quicksand_citibox-bold_v1.0.woff2') format('woff2'),
-        url('../../assets/fonts/quicksand_citibox-bold_v1.0.woff') format('woff'),
-        url('../../assets/fonts/quicksand_citibox-bold_v1.0.ttf') format('ttf');
-   font-weight: normal;
-   font-style: normal;
-
-}
-
-.container {
-   max-width: 400px;
-   margin: 0 auto;
-}
-
-.boton {
-   margin: 0 auto 26.5px auto;
-   width: 208px;
-   color: white !important;
-   border-radius: 40px;
-   background-color: #7942ed;
-   letter-spacing: 0.7px;
-   padding-top: 10.5px;
-   padding-bottom: 12.5px;
-   font-family: quicksand_citiboxbold;
-   font-size: 18px;
-}
-
-.logo {
-   margin-top: 32px;
-   margin-bottom: 80px;
-}
-
-.logo img {
-   width: 98px;   
-}
-
-h1 {
-   font-family: quicksand_citiboxbold;
-   font-size: 32px;
-   letter-spacing: 0.6px;
-   color: #7942ed;
-   -webkit-font-smoothing: antialiased;
-   font-smoothing: antialiased;
-   -moz-font-smoothing: antialiased;
-   -o-font-smoothing: antialiased;
-   -ms-font-smoothing: antialiased;
-   padding: 0 37px;
-}
-
-p {
-   margin-top: 25px;
-}
-
-.titulo {
-   height: 120px;
-}
-
-.subtitulo {
-    width: 164px;
-    height: 66px;
-    font-size: 48px;
-    font-weight: bold;
+    font-family: 'latolight';
+    src: url('../../assets/fonts/lato-light.woff2') format('woff2'),
+         url('../../assets/fonts/lato-light.woff') format('woff'),
+         url('../../assets/fonts/lato-light.ttf') format('ttf');
+    font-weight: normal;
     font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 1.9px;
-    text-align: center;
-    color: #3f3f3f;
+ 
+ }
+ 
+ @font-face {
+    font-family: 'latoregular';
+    src: url('../../assets/fonts/lato-regular.woff2') format('woff2'),
+         url('../../assets/fonts/lato-regular.woff') format('woff'),
+         url('../../assets/fonts/lato-regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+ 
+ }
+ 
+ @font-face {
+    font-family: 'latosemibold';
+    src: url('../../assets/fonts/lato-semibold.woff2') format('woff2'),
+         url('../../assets/fonts/lato-semibold.woff') format('woff'),
+         url('../../assets/fonts/lato-semibold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+ 
+ }
+ 
+ 
+ @font-face {
+    font-family: 'quicksand_citiboxbold';
+    src: url('../../assets/fonts/quicksand_citibox-bold_v1.0.woff2') format('woff2'),
+         url('../../assets/fonts/quicksand_citibox-bold_v1.0.woff') format('woff'),
+         url('../../assets/fonts/quicksand_citibox-bold_v1.0.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+ 
+ }
+ 
+ .container {
+    max-width: 400px;
+    margin: 0 auto;
+ }
+ 
+ .boton {
+    margin: 0 auto 32px auto;
+    width: 208px;
+    color: white !important;
+    border-radius: 40px;
+    background-color: #7942ed;
+    letter-spacing: 0.7px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
     font-family: quicksand_citiboxbold;
-}
-
-.spacingOne{
-    height: 100px;
-}
+    font-size: 18px;
+    font-weight: lighter !important;
+ }
+ 
+ .logo {
+    margin-top: 32px;
+    margin-bottom: 80px;
+ }
+ 
+ .logo img {
+    width: 98px;   
+ }
+ 
+ h1 {
+    font-family: quicksand_citiboxbold;
+    font-size: 32px;
+    letter-spacing: 0.6px;
+    color: #7942ed;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    padding: 0 37px;
+ }
+ 
+ p {
+    margin-top: 25px;
+ }
+ 
+ .titulo {
+    width: 283.9px;
+    margin-bottom: 0 !important;
+    font-weight: lighter;
+ }
+ 
+ .subtitulo {
+     width: 164px;
+     height: 66px;
+     font-size: 48px;
+     font-weight: lighter;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: normal;
+     letter-spacing: 12px;
+     text-align: center;
+     color: #3f3f3f;
+     font-family: quicksand_citiboxbold;
+     margin-top: 21px;
+     margin-bottom: 104px;
+ }
+ 

@@ -4,19 +4,18 @@
       <img class="mx-auto d-block" src="../../assets/img/citibox-logo.png" alt="">
     </div>
     <div class="col-12 titulo">
-      <h1 class="text-center">Introduce tu nuevo código en el buzón Nº {{data.numBuzon}}</h1>
+      <h1 class="text-center">Introduce en el buzón {{data.numBuzon}} tu nuevo código:</h1>
     </div>
     <div class="col-12 subtitulo">
-      <p class="text-center">{{data.codigoRes}}</p>
+      <p class="text-center">{{codFinal}}</p>
     </div>
   </div>
-  <div class="spacingOne"></div>
   <div class="row align-items-center">
     <div class="col">
-      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'ten']">Ya tengo mi pedido</a>
+      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'ten']">¡Pedido recogido!</a>
     </div>
     <div class="col">
-      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'two']">Échame un cable</a>
+      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'two']">Sigue sin abrirse</a>
     </div>
   </div>
 </div>

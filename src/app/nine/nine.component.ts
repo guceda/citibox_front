@@ -34,7 +34,6 @@ export class NineComponent implements OnInit {
     })
 
     this.interval = setInterval(() => {
-      console.log(this.parpadeo)
       if(this.parpadeo === false) {
         this.parpadeo = true
       } else if (this.parpadeo === true) {

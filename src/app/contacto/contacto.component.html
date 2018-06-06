@@ -11,11 +11,11 @@
     </div>
   </div>
   <div class="row align-items-center">
-    <!-- <div class="col">
-      <a type="button" class="btn d-block boton">OK</a>
-    </div> -->
     <div class="col">
-      <a type="button" class="btn d-block boton" [routerLink]="['/orden', data.codigoTrans, 'twob']">Ayuda</a>
+      <a type="button" class="btn d-block boton">OK</a>
+    </div>
+    <div class="col">
+      <a type="button" class="btn d-block boton" (click)="handleClick()">Ayuda</a>
     </div>
     <!-- <div class="col">
       <a type="button" class="btn d-block boton">Ayuda</a>

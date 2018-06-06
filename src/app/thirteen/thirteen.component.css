@@ -45,16 +45,17 @@
 }
 
 .boton {
-   margin: 0 auto 26.5px auto;
+   margin: 0 auto 32px auto;
    width: 208px;
    color: white !important;
    border-radius: 40px;
    background-color: #7942ed;
    letter-spacing: 0.7px;
-   padding-top: 10.5px;
-   padding-bottom: 12.5px;
+   padding-top: 9.5px;
+   padding-bottom: 9.5px;
    font-family: quicksand_citiboxbold;
    font-size: 18px;
+   font-weight: lighter !important;
 }
 
 .logo {
@@ -84,23 +85,23 @@ p {
 }
 
 .titulo {
-   height: 120px;
+   width: 283.9px;
+   margin-bottom: 0 !important;
+   font-weight: lighter;
 }
 
 .subtitulo {
     width: 164px;
     height: 66px;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: lighter;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: 1.9px;
+    letter-spacing: 12px;
     text-align: center;
     color: #3f3f3f;
     font-family: quicksand_citiboxbold;
-}
-
-.spacingOne{
-    height: 100px;
+    margin-top: 21px;
+    margin-bottom: 104px;
 }

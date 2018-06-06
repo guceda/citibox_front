@@ -21,7 +21,6 @@ import { TwoComponent } from './two/two.component';
 import { ThirteenComponent } from './thirteen/thirteen.component';
 import { FourteenComponent } from './fourteen/fourteen.component';
 import { FifteenComponent } from './fifteen/fifteen.component';
-import { OneComponent } from './one/one.component';
 
 
 @NgModule({
@@ -42,7 +41,7 @@ import { OneComponent } from './one/one.component';
     ThirteenComponent,
     FourteenComponent,
     FifteenComponent,
-    OneComponent
+   
   ],
   imports: [
     BrowserModule,
