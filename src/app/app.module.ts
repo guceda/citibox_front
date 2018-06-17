@@ -21,6 +21,7 @@ import { TwoComponent } from './two/two.component';
 import { ThirteenComponent } from './thirteen/thirteen.component';
 import { FourteenComponent } from './fourteen/fourteen.component';
 import { FifteenComponent } from './fifteen/fifteen.component';
+import { InitComponent } from './init/init.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { FifteenComponent } from './fifteen/fifteen.component';
     ThirteenComponent,
     FourteenComponent,
     FifteenComponent,
+    InitComponent,
    
   ],
   imports: [

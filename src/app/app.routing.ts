@@ -12,12 +12,13 @@ import { TwoComponent } from "./two/two.component";
 import { ThirteenComponent } from "./thirteen/thirteen.component";
 import { FourteenComponent } from "./fourteen/fourteen.component";
 import { FifteenComponent } from "./fifteen/fifteen.component";
+import { InitComponent } from "./init/init.component";
 
 
 //rutas de la aplicacion 
 export const appRoutes:Routes = [
     { path: '', redirectTo: 'orden/:id', pathMatch: 'full' },
-    { path:'orden/:id', component: FourComponent },
+    { path:'orden/:id', component: InitComponent },
     { path:'orden/:id/contacto', component: ContactoComponent },
     { path:'orden/:id/newcode', component: NewcodeComponent },
     { path:'orden/:id/two', component: TwoComponent },

@@ -1,27 +1,30 @@
 <div class="container">
-  <div class="row align-items-center">
-    <div class="logo col-12">
-      <img class="mx-auto d-block" src="../../assets/img/citibox-logo.png" alt="">
-    </div>
-    <div class="col-12 titulo" [ngSwitch]="error">
-      <h1 class="text-center" class="h1_titulo" *ngSwitchCase="false">Introduce la letra del buzón {{data.numBuzon}}</h1>
-      <h1 class="text-center" class="h1_titulo" *ngSwitchCase="true">¡Error! Introduce la letra del buzón {{data.numBuzon}}</h1>
-    </div>
-    <div class="col-12 subtitulo">
-      <img class="calculator" src="../../assets/img/TECLADO.png" alt="">
-      <div class="input">
-        <form [formGroup]="form" (ngSubmit)="handleSubmit(form.value)">
-          <input type="text" maxlength="1" style="text-transform:uppercase" formControlName="letra" class="letra" [ngClass]="{letraErr:error, parpadeo:parpadeo}">
-            <div class="col one">
-              <input type="submit" class="btn d-block boton alto" value="OK" [disabled]="!form.valid">
-            </div>
-            <div class="col two">
-              <a class="btn d-block boton alto" [routerLink]="['/orden', data.codigoTrans, 'two']" *ngIf="error === true">Ayuda</a>
-            </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-</div>
+	<div class="row align-items-center">
+		<div class="logo col-12">
+			<img class="mx-auto d-block" src="../../assets/img/citibox-logo.png" alt="">
+		</div>
+		<div class="col-12 titulo" [ngSwitch]="error">
+			<h1 class="text-center" class="h1_titulo" *ngSwitchCase="false">Introduce la letra del buzón {{data.numBuzon}}</h1>
+			<h1 class="text-center" class="h1_titulo" *ngSwitchCase="true">¡Error! Introduce la letra del buzón {{data.numBuzon}}</h1>
+		</div>
+		<div class="col-12 subtitulo">
+			<div class="imagen">
+				<div class="input">
+					<form [formGroup]="form" (ngSubmit)="handleSubmit(form.value)">
+						<input type="text" maxlength="1" style="text-transform:uppercase" formControlName="letra" class="letra" [ngClass]="{letraErr:error, parpadeo:parpadeo}">
+						<div class="col one">
+							<input type="submit" class="btn d-block boton alto" value="OK" [disabled]="!form.valid">
+						</div>
+						<div class="col two">
+							<a class="btn d-block boton alto" [routerLink]="['/orden', data.codigoTrans, 'two']" *ngIf="error === true">Ayuda</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+			<!-- <img class="calculator" src="../../assets/img/TECLADO1.png" alt=""> -->
 
+		</div>
+	</div>
+
+</div>

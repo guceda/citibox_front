@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./nine.component.css'],
   providers: [PersistenceService]
 })
+
 export class NineComponent implements OnInit {
 
   form: FormGroup
@@ -29,7 +30,7 @@ export class NineComponent implements OnInit {
         Validators.required,
         Validators.maxLength(1),
         Validators.minLength(1),
-        Validators.pattern("[a-zA-Z]")
+        Validators.pattern("[a-zA-Z]"),
       ])
     })
 
@@ -40,10 +41,11 @@ export class NineComponent implements OnInit {
         this.parpadeo = false
       } 
     }, 500)
+
+    
   }
 
   handleSubmit(pInput) {
-    
     let letra = this.data.letra.toLowerCase()
     if(pInput.letra === letra) {
       this.router.navigate(['/orden', this.data.codigoTrans, 'eleven'])
@@ -51,6 +53,10 @@ export class NineComponent implements OnInit {
     } else {
       clearInterval(this.interval)
       this.error = true
+      this.parpadeo = false
+      this.form.controls.letra.setValue('')
     }
   }
 }
+
+

@@ -53,7 +53,22 @@
   letter-spacing: 0.7px;
   padding-top: 9.5px;
   padding-bottom: 9.5px;
-  font-family: quicksand_citiboxbold;
+  font-family: latoregular;
+  font-size: 18px;
+  font-weight: lighter !important;
+}
+
+.boton1 {
+  margin: 0 auto 32px auto;
+  width: 208px;
+  color: #7942ed !important;
+  border: 3px solid #7942ed;
+  border-radius: 40px;
+  background-color: white;
+  letter-spacing: 0.7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: latoregular;
   font-size: 18px;
   font-weight: lighter !important;
 }
